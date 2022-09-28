@@ -1,0 +1,11 @@
+.hero {
+  background-image: url("/public/utils/ytu_hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: max(720px, auto);
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
