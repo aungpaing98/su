@@ -18,31 +18,43 @@ import Statements from "./pages/Statements";
 import Strikes from "./pages/Strikes";
 import StudentsAssociation from "./pages/StudentsAssociation";
 import Support from "./pages/Support";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
-function App(props) {
+import { navLinks, linkToPage } from "./data/navlinks";
+
+const navKeys = Object.keys(navLinks);
+
+function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/autonomy" component={Autonomy} />
-        <Route exact path="/cdm" component={CDM} />
-        <Route exact path="/clubs" component={Clubs} />
-        <Route exact path="/education-support" component={EducationSupport} />
-        <Route exact path="/donate-food" component={FoodDonate} />
-        <Route exact path="/idp" component={IDP} />
-        <Route exact path="/libraries" component={Libraries} />
-        <Route exact path="/masterplan" component={MasterPlan} />
-        <Route exact path="/news" component={News} />
-        <Route exact path="/other-clubs" component={OtherClub} />
-        <Route exact path="/statements" component={Statements} />
-        <Route exact path="/strikes" component={Strikes} />
-        <Route
-          exact
-          path="/student-association"
-          component={StudentsAssociation}
-        />
-        <Route exact path="/support" component={Support} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/statements" element={<Statements />} />
+        <Route path="/recent-news" element={<News />} />
+
+        <Route path="/strikes" element={<Strikes />} />
+        <Route path="/cdm" element={<CDM />} />
+        <Route path="/idp" element={<IDP />} />
+        <Route path="/supports" element={<Support />} />
+        <Route path="/spring-libraries" element={<Libraries />} />
+        <Route path="/educational-support" element={<EducationSupport />} />
+        <Route path="/donate-food" element={<FoodDonate />} />
+
+        <Route path="/student-association" element={<StudentsAssociation />} />
+        <Route path="/clubs" element={<Clubs />} />
+        <Route path="/other-clubs" element={<OtherClub />} />
+
+        <Route path="/masterplan" element={<MasterPlan />} />
+        <Route path="/autonomy" element={<Autonomy />} />
+
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+
+        {/* {navKeys.map((navKey) => {
+          return <Route path={navKey} element={navKeys[navKey]} />;
+        })} */}
       </Routes>
       <Footer />
     </BrowserRouter>

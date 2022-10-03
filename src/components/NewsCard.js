@@ -1,7 +1,7 @@
 import React from "react";
 
 function NewsCard(props) {
-  const { id, imgSrc1, imgSrc2, title, description, btnText } = props.news;
+  const { imgSrc1, imgSrc2, title, description, btnText } = props.news;
   return (
     <div className="col-md-6 col-lg-4">
       <div className="card">

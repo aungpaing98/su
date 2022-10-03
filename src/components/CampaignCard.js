@@ -1,9 +1,8 @@
 import React from "react";
 
 function CampaignCard(props) {
-  const { id, title, descriptions, buttonText, imgsSrc } = props.campaign;
+  const { title, descriptions, buttonText, imgsSrc } = props.campaign;
   const imgLeft = props.imgLeft;
-  console.log(imgLeft);
   return (
     <>
       {imgLeft ? (

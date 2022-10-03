@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import Hero from "../components/Hero";
+import Union from "../components/Union";
+import Mission from "../components/Mission";
+import NewsIndex from "../components/NewsIndex";
+import Campaign from "../components/Campaign";
 
 function Home() {
   return (
-    <h1>Home Page</h1>
-  )
+    <>
+      <Hero />
+      <Union />
+      <Mission />
+      <NewsIndex />
+      <Campaign />
+    </>
+  );
 }
 
-export default Home
+export default Home;
