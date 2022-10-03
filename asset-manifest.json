@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/su/static/css/main.83ec7fee.css",
+    "main.js": "/su/static/js/main.eb50d193.js",
+    "static/media/ytu_hero.png": "/su/static/media/ytu_hero.dfd59f3d27a621a63ade.png",
+    "index.html": "/su/index.html",
+    "main.83ec7fee.css.map": "/su/static/css/main.83ec7fee.css.map",
+    "main.eb50d193.js.map": "/su/static/js/main.eb50d193.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83ec7fee.css",
+    "static/js/main.eb50d193.js"
+  ]
+}
